@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(28, 33, 44);
+  margin: 0;
+  font-family: sans-serif;
+  min-width: fit-content;
+}
+#root {
+  width: 100%;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#goals-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 90%;
+  height: 8vh;
+
+  .goal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.5%;
+    border-radius: 10px;
+    background-color: rgb(124, 48, 48);
+    padding-left: 10px;
+  }
+  .completed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.5%;
+    background-color: rgb(50, 124, 48);
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+  img {
+    width: 100px;
+  }
+}
+
+#waldo-container {
+  position: relative;
+  margin: 20px auto 100px auto;
+}
+#waldo {
+  width: 1500px;
+  border-radius: 10px;
+}
+#dropdown {
+  position: absolute;
+  background-color: lightblue;
+  border: white solid 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  :hover {
+    background-color: whitesmoke;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #goals-container {
+    height: 10vh;
+  }
+  .lowerdown {
+    margin-top: 45px;
+  }
+}
