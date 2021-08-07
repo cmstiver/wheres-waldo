@@ -36,6 +36,7 @@ const magnify = () => {
     activate();
     updateMagnifier(e.clientX - rect.left, e.clientY - rect.top);
     timeout = setTimeout(deactivate, 2500);
+    onLoad();
   }
 
   function onMouseleave() {
@@ -44,7 +45,6 @@ const magnify = () => {
 
   img.addEventListener('mousemove', onMousemove);
   img.addEventListener('mouseleave', onMouseleave);
-  onLoad(img);
 };
 
 export default magnify;
