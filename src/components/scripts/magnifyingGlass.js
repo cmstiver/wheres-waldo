@@ -42,7 +42,7 @@ const magnify = () => {
     deactivate();
   }
 
-  img.addEventListener('load', onLoad);
+  onLoad(img);
   img.addEventListener('mousemove', onMousemove);
   img.addEventListener('mouseleave', onMouseleave);
 };

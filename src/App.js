@@ -28,10 +28,6 @@ function App() {
   useEffect(() => {
     fetchGoals();
   }, []);
-
-  useEffect(() => {
-    console.log(goals);
-  }, [goals]);
   return (
     <div id="main-container">
       <Goals completed={completed} />
